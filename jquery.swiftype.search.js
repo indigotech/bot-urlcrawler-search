@@ -191,11 +191,11 @@
         previousPage, nextPage;
       if (currentPage != 1) {
         previousPage = currentPage - 1;
-        pages = pages + '<a href="#" class="st-prev" data-hash="true" data-page="' + previousPage + '">&laquo; previous</a>';
+        pages = pages + '<a href="#" class="st-prev" id="st-search-restult-prev" data-hash="true" data-page="' + previousPage + '">&laquo; previous</a>';
       }
       if (currentPage < totalPages) {
         nextPage = currentPage + 1;
-        pages = pages + '<a href="#" class="st-next" data-hash="true" data-page="' + nextPage + '">next &raquo;</a>';
+        pages = pages + '<a href="#" class="st-next" id="st-search-restult-next" data-hash="true" data-page="' + nextPage + '">next &raquo;</a>';
       }
       pages += '</div>';
       return pages;
@@ -225,11 +225,11 @@
   };
 
   var defaultRenderFunction = function (document_type, item) {
-      return '<div class="st-result"><h3 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + htmlEscape(item['title']) + '</a></h3><h4>' + htmlEscape(item['description']) + '</h4></div>';
+      return '<div class="st-result" id="st-search-result"><h3 class="title" id="st-search-result-title"><a href="' + item['url'] + '" id="st-search-result-link">' + htmlEscape(item['title']) + '</a></h3><h4 id="st-search-result-desc">' + htmlEscape(item['description']) + '</h4></div>';
     };
 
   var defaultLoadingFunction = function(query, $resultContainer) {
-      $resultContainer.html('<p class="st-loading-message">loading...</p>');
+      $resultContainer.html('<p class="st-loading-message" id="st-loading-message">Loading...</p>');
     };
 
   var defaultPostRenderFunction = function(data) {

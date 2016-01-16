@@ -1,11 +1,168 @@
 #st-search-input {
-    font-size: 24px;
+    font-size: 20px;
     width: 600px;
     line-height: 36px;
+    height: 45px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 0px;
+}
+
+#st-search-input:focus {
+	outline-width: 0;
+}
+
+#st-search-input-icon {
+	width: 30px;
+	margin-left: 10px;
+	margin-bottom: -5px;
 }
 
 #search-form button {
     font-size: 24px;
     width: 100px;
     line-height: 36px;
+    display: inline-block;
+}
+
+#searchboxContainer {
+	display: table;
+	height: 90%;
+	width: 100%;
+}
+
+#searchbox {
+	display: block;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 120px;
+}
+
+#st-results-container {
+	display: block;
+	padding: 60px;
+	margin: 80px auto 0 auto;
+	max-width: 845px;
+	border-radius: 4px;
+	border: 1px solid rgba(179,169,169,0.27);
+	background-color: rgba(255,255,255,0.92);
+}
+
+#st-search-result {
+	display: block;
+    min-height: 80px;
+    margin-top: 12px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid rgba(179,169,169,0.27);
+    background: rgba(235,229,229,0.12);
+}
+
+#st-search-result-title {
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+
+#st-search-result-link {
+	margin-bottom: 4px;
+	font-size: 15pt;
+	display: block;
+    color: #225f8c;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+#st-search-result-desc {
+	font-family: 'Open Sans';
+	font-weight: lighter;
+    font-size: 12pt;
+    max-width: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #504D4D;
+}
+
+#st-search-restult-prev {
+	margin-top: 16px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-decoration: none;
+	color: #225f8c;
+	display: block;
+	text-align: left;
+}
+
+#st-search-restult-next {
+	margin-top: 16px;
+	font-family: 'Open Sans';
+	font-weight: 400;	
+	text-decoration: none;
+	color: #225f8c;
+	display: block;
+	text-align: right;
+}
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+#logo {
+	font-family: 'Open Sans',serif;
+	font-style: italic;
+	font-size: 16pt;
+	font-weight: 300;
+	margin:10px auto 30px auto;
+}
+
+#brain_geo {
+	width: 180px;
+	margin: -8px auto 10px auto;
+}
+
+#st-search-mag {
+	background-color: white;
+	color: black;
+	padding-left: 20px;
+	font-size: 18pt;
+}
+
+#header-fixed {
+	position:fixed; 
+	top:0px; 
+	margin:auto;
+	z-index:100000; 
+	width:100%;
+	background-color: white;
+} 
+
+#taqtile-logo {
+	display: block;
+	vertical-align: bottom;
+	margin: 0 auto;
+	width: 40px;
+}
+
+#st-loading-message {
+	font-family: 'Open Sans',serif;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+}
+
+#st-no-results {
+	font-family: 'Open Sans',serif;
+	color: black;
+	text-align: center;
+	font-size: 18px;
 }

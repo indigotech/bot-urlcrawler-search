@@ -10,12 +10,10 @@ form input.st-search-input {
 }
 
 .swiftype-widget .autocomplete {
-  font-family: "Open Sans", serif;
-  font-weight: lighter;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #fff;
   display: block;
   list-style-type: none;
-  width: 800px;
   margin: 0;
   padding: 0;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -31,8 +29,7 @@ form input.st-search-input {
 }
 
 .swiftype-widget .autocomplete ul {
-  font-family: "Open Sans", serif;
-  font-weight: lighter;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #fff;
   display: block;
   list-style-type: none;
@@ -52,7 +49,6 @@ form input.st-search-input {
   cursor: pointer;
   padding: 10px 8px;
   font-size: 13px;
-  font-weight: lighter;
   list-style-type: none;
   background-image: none;
   margin: 0;
@@ -97,14 +93,14 @@ form input.st-search-input {
 }
 
 .swiftype-widget .autocomplete li p.title {
-  font-weight: lighter;
+  font-weight: bold;
   color: #1c6cb5;
 }
 
 .swiftype-widget .autocomplete li p.title em {
   color: #0b2644;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .swiftype-widget .autocomplete li.active p.title {
@@ -115,19 +111,16 @@ form input.st-search-input {
 .swiftype-widget .autocomplete li.active p.title em {
   color: #fff;
   font-style: normal;
-  font-weight: lighter;
 }
 
 .swiftype-widget .autocomplete li .sections {
   color: #999;
   font-size: 11px;
-  font-weight: lighter;
 }
 
 .swiftype-widget .autocomplete li .sections em {
   color: #666;
   font-style: normal;
-  font-weight: lighter;
 }
 
 .swiftype-widget .autocomplete li .sections .section {
@@ -142,5 +135,4 @@ form input.st-search-input {
 .swiftype-widget .autocomplete li.active .sections em {
   color: #a9d7f1;
   font-style: normal;
-  font-weight: lighter;
 }

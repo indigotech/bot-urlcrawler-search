@@ -1,39 +1,42 @@
 <!doctype html>
 <html>
   <head>
-    <title>Swiftype Autocomplete and Search Example</title>
+    <title>Knowledge base</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="jquery.swiftype.autocomplete.js"></script>
     <link rel="stylesheet" type="text/css" href="autocomplete.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <h1>Swiftype Autocomplete and Search Example</h1>
+    <div id="searchboxContainer">
+      <div id="searchbox">
+        <img id="brain_geo" src="brain_geo.png" alt="brain_geo">
+        <h2 id="logo">knowledge base</h2>
+        <form id="search-form">
+          <!-- <input type="text" id="st-search-input">
+          <button type="submit">Search</button> -->
+          <input class="search-input" id="st-search-input" type="text" placeholder="Search for anything"/>
+        </form>
+        <script>
+          // set up autocomplete
+          $("#st-search-input").swiftype({
+            engineKey: "T6stQ2m7sf88bS7x75Vk"
+          });
 
-    <form id="search-form">
-      <input type="text" id="st-search-input">
-      <button type="submit">Search</button>
-    </form>
-
-    <p>Try searches like <em>autocomplete</em>, <em>wordpress</em>, or <em>functional boosts</em>.</p>
-
-    <p>This search engine is based on the Swiftype website, so clicking on an autocomplete result will take you there. </p>
-
-    <script>
-    // set up autocomplete
-    $("#st-search-input").swiftype({
-      engineKey: "T6stQ2m7sf88bS7x75Vk"
-    });
-
-    // redirect form to results page with #stq hash parameter
-    $("#search-form").submit(function(event) {
-      event.preventDefault();
-      var query = $("#st-search-input").val();
-      // set the location to be the URL of your search results page
-      // For this example, it's results.html.
-      window.location = "results.html#stq=" + query;
-    });
-    </script>
+          // redirect form to results page with #stq hash parameter
+          $("#search-form").submit(function(event) {
+            event.preventDefault();
+            var query = $("#st-search-input").val();
+            // set the location to be the URL of your search results page
+            // For this example, it's results.html.
+            window.location = "results.html#stq=" + query;
+          });
+        </script>
+      </div>
+    </div>
+    <img src="taqtile-horizontal.png" id="taqtile-logo"/>
   </body>
 </html>
