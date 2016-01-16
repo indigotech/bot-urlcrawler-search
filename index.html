@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Swiftype Autocomplete and Search Example</title>
+    <title>Knowledge base links search</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="jquery.swiftype.autocomplete.js"></script>
     <link rel="stylesheet" type="text/css" href="autocomplete.css"/>
@@ -9,31 +9,29 @@
   </head>
 
   <body>
-    <h1>Swiftype Autocomplete and Search Example</h1>
+    <div id="searchboxContainer">
+      <div id="searchbox">
+        <h1>Knowledge base links search</h1>
+        <form id="search-form">
+          <input type="text" id="st-search-input">
+          <button type="submit">Search</button>
+        </form>
+        <script>
+          // set up autocomplete
+          $("#st-search-input").swiftype({
+            engineKey: "T6stQ2m7sf88bS7x75Vk"
+          });
 
-    <form id="search-form">
-      <input type="text" id="st-search-input">
-      <button type="submit">Search</button>
-    </form>
-
-    <p>Try searches like <em>autocomplete</em>, <em>wordpress</em>, or <em>functional boosts</em>.</p>
-
-    <p>This search engine is based on the Swiftype website, so clicking on an autocomplete result will take you there. </p>
-
-    <script>
-    // set up autocomplete
-    $("#st-search-input").swiftype({
-      engineKey: "T6stQ2m7sf88bS7x75Vk"
-    });
-
-    // redirect form to results page with #stq hash parameter
-    $("#search-form").submit(function(event) {
-      event.preventDefault();
-      var query = $("#st-search-input").val();
-      // set the location to be the URL of your search results page
-      // For this example, it's results.html.
-      window.location = "results.html#stq=" + query;
-    });
-    </script>
+          // redirect form to results page with #stq hash parameter
+          $("#search-form").submit(function(event) {
+            event.preventDefault();
+            var query = $("#st-search-input").val();
+            // set the location to be the URL of your search results page
+            // For this example, it's results.html.
+            window.location = "results.html#stq=" + query;
+          });
+        </script>
+      </div>
+    </div>
   </body>
 </html>
