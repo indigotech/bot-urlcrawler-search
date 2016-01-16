@@ -225,7 +225,7 @@
   };
 
   var defaultRenderFunction = function (document_type, item) {
-      return '<div class="st-result"><h3 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + htmlEscape(item['title']) + '</a></h3></div>';
+      return '<div class="st-result"><h3 class="title"><a href="' + item['url'] + '" class="st-search-result-link">' + htmlEscape(item['title']) + '</a></h3><h4>' + htmlEscape(item['description']) + '</h4></div>';
     };
 
   var defaultLoadingFunction = function(query, $resultContainer) {
