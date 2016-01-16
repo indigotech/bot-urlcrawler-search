@@ -166,3 +166,7 @@ body {
 	text-align: center;
 	font-size: 18px;
 }
+
+#brain_geo_link {
+	text-decoration: none;
+}

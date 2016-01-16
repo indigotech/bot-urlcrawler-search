@@ -150,6 +150,8 @@
       });
 
       var renderSearchResults = function (data) {
+        $('#st-search-input').val(data.info.links.query);
+
         if (typeof config.preRenderFunction === 'function') {
           config.preRenderFunction.call($this, data);
         }
