@@ -1,12 +1,8 @@
-# Swiftype Autocomplete and Search Example
+# Deployment to production - Required changes
 
-This example shows how to combine the Swiftype autocomplete and search jQuery libraries to create a common search experience: autocomplete results plus redirecting to a full search results page.
+You need to replace the engine key on two files.
 
-This example uses a search engine based on the Swiftype website created using our [web crawler](https://swiftype.com/documentation/crawler).
+Replace ```engineKey: 'T6stQ2m7sf88bS7x75Vk'`` inside of jquery.swiftype.autocomplete.js
+Replace ```engineKey: 'T6stQ2m7sf88bS7x75Vk'`` inside of jquery.swiftype.search.js
 
-## How it works
-
-On the index.html, there is a search box. The autocomplete is configured with the `swiftype` function (see [Swiftype's autocomplete plugin](https://github.com/swiftype/swiftype-autocomplete-jquery/) for details). Additionally, there is a jQuery submit event handler that redirects to the search results page with the `stq` hash parameter set.
-
-On the search results page, the form is repeated, but without the redirect (since the browser is already on that page). The `swiftypeSearch` function is also configured. This handles displaying the search results in the provided `resultContainingElement`. See the [Swiftype search plugin](https://github.com/swiftype/swiftype-search-jquery/) for more details.
-
+This key gives this application read-only access to the search api provided by swiftype.
