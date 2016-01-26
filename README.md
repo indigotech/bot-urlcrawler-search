@@ -1,3 +1,10 @@
+# Slack URL bot - Search
+
+Bot that will read URLs posted on Slack and add them to a [Swiftype](https://swiftype.com) engine
+
+Original source at [thiago-soliveira/autocomplete-search-example](https://github.com/thiago-soliveira/autocomplete-search-example), project was develop for Taqtile's Hackathon '16
+
+
 # Deployment to production - Required code changes
 
 You need to replace the engine key on two files.
